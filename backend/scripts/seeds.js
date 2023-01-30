@@ -12,7 +12,7 @@ const connectedToDatabase = () => {
   const connection = process.env.MONGODB_URI || "mongodb://localhost:27017";
   mongoose.connect(connection);
   mongoose.set("debug", true);
-};
+}
 
 async function main() {
   connectedToDatabase();
